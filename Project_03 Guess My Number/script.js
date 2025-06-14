@@ -25,10 +25,10 @@ document.querySelector('.check').addEventListener('click', function () {
    
     document.querySelector('body').style.backgroundColor = '#60b347';
 
-    // Changing the size of the number when the correct answer
+   
     document.querySelector('.number').style.width = '30rem';
 
-    // when the guess is too high
+  
   } else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = '☝ Too High !';
@@ -39,7 +39,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
 
-    // When the guess is low
+    
   } else if (guess < secretNumber) {
     if (score > 1) {
       document.querySelector('.message').textContent = '👇 Too Low !';
@@ -52,7 +52,7 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-// Setting up the again button
+
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   document.querySelector('.score').textContent = score;
