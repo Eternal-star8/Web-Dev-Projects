@@ -56,13 +56,13 @@ btnRoll.addEventListener('click', function () {
     diceEl.src = `dice-${dice}.png`;
 
     if (dice !== 1) {
-      // Add dice to current score
+      
       currentScore += dice;
       document.getElementById(
         `current--${activePlayer}`
       ).textContent = currentScore;
     } else {
-      // Switch to next player
+      
       switchPlayer();
     }
   }
@@ -70,16 +70,15 @@ btnRoll.addEventListener('click', function () {
 
 btnHold.addEventListener('click', function () {
   if (playing) {
-    // 1. Add current score to active player's score
+   
     scores[activePlayer] += currentScore;
-    // scores[1] = scores[1] + currentScore
+    
 
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
 
-    // 2. Check if player's score is >= 100
     if (scores[activePlayer] >= 100) {
-      // Finish the game
+   
       playing = false;
       diceEl.classList.add('hidden');
 
@@ -90,7 +89,7 @@ btnHold.addEventListener('click', function () {
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
     } else {
-      // Switch to the next player
+     
       switchPlayer();
     }
   }
