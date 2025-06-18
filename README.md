@@ -3,7 +3,7 @@
 This repository contains my personal collection of web development projects built using HTML, CSS, and (soon) JavaScript. Each project reflects my learning progress, design practice, and commitment to becoming a skilled frontend developer.
 
 > I’m Priya Mehta, a B.Tech Computer Science student at UCET Hazaribagh, on a mission to build clean, responsive, and accessible websites.  
-> 🔗 GitHub: [Eternal-star8](https://github.com/Eternal-star8)  
+> 🔗 GitHub: [Priya-Mehta436](https://github.com/Priya-Mehta436)  
 
 ---
 
